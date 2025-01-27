@@ -1,0 +1,21 @@
+{
+  "name": "@cowprotocol/sdk-wagmi",
+  "version": "0.0.0",
+  "private": true,
+  "files": [],
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@cowprotocol/contracts": "^1.7.0"
+  },
+  "devDependencies": {
+    "@vercel/style-guide": "^5.2.0",
+    "eslint-config-turbo": "^2.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "typescript": "5.1.6"
+  }
+}

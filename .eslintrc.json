@@ -1,0 +1,3 @@
+{
+  "extends": ["./pkg/config-eslint/library.js"]
+}

@@ -2,16 +2,22 @@
   "$schema": "https://turborepo.org/schema.json",
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+      "dependsOn": ["^tsc"],
+      "outputs": ["dist/**"],
+      "cache": true,
+      "inputs": ["src/**/*.tsx", "src/**/*.ts", "tsconfig.build.json", "tsconfig.json"]
+    },
+    "test": {
+      "dependsOn": ["build"],
+      "outputs": ["coverage/**"],
+      "cache": true
     },
     "lint": {
       "outputs": []
     },
-    "dev": {
-      "cache": false,
-      "persistent": true
+    "tsc": {
+      "dependsOn": ["^tsc"],
+      "outputs": []
     }
   }
 }

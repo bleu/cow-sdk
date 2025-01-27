@@ -4,13 +4,81 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "tsc": "turbo run tsc"
+  },
+  "jest": {
+    "automock": false,
+    "resetMocks": false,
+    "setupFiles": [
+      "./setupTests.js"
+    ],
+    "collectCoverageFrom": [
+      "pkg/**/src/**/*.{ts,tsx}"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "modulePaths": [
+      "<rootDir>/"
+    ],
+    "transform": {
+      "^.+\\.(t|j)sx?$": "@swc/jest"
+    },
+    "testEnvironment": "node",
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "./tsconfig.json"
+      }
+    },
+    "moduleNameMapper": {
+      "^@cowprotocol/(.*)$": "<rootDir>/pkg/$1/src"
+    }
   },
   "devDependencies": {
+    "@cowprotocol/app-data": "^2.4.0",
+    "@cowprotocol/contracts": "^1.7.0",
+    "@ethersproject/abstract-signer": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@openzeppelin/merkle-tree": "^1.0.5",
+    "@swc/jest": "^0.2.37",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.10",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
     "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
-    "turbo": "^2.0.3"
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "ethers": "^5.7.2",
+    "exponential-backoff": "^3.1.1",
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
+    "jest": "^29.6.4",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-fetch-mock": "^3.0.3",
+    "limiter": "^2.1.0",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.2.5",
+    "ts-mockito": "^2.6.1",
+    "tslib": "^2.6.2",
+    "turbo": "^2.0.3",
+    "typescript": "5.1.6"
   },
   "packageManager": "pnpm@8.15.6",
-  "name": "with-rollup"
+  "name": "with-rollup",
+  "dependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/bytes": "^5.7.0",
+    "@ethersproject/contracts": "^5.7.0",
+    "@ethersproject/hash": "^5.7.0",
+    "@ethersproject/solidity": "^5.7.0"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "limiter@2.1.0": "patches/limiter@2.1.0.patch"
+    }
+  }
 }

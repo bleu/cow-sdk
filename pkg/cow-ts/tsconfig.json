@@ -1,0 +1,19 @@
+{
+  "extends": "../../pkg/config-typescript/base.json",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "paths": {
+      "@cowprotocol/common": ["../cow-common/src"],
+      "@cowprotocol/common/*": ["../cow-common/src/*"],
+      "@cowprotocol/order-signing": ["../cow-order-signing/src"],
+      "@cowprotocol/order-signing/*": ["../cow-order-signing/src/*"]
+    }
+  },
+  "references": [{ "path": "../cow-common" }, { "path": "../cow-order-signing" }]
+}

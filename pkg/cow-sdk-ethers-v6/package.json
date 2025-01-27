@@ -1,0 +1,28 @@
+{
+  "name": "@cowprotocol/sdk-ethers-v6",
+  "version": "0.0.0",
+  "private": true,
+  "files": [],
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx",
+    "typechain:codegen": "typechain --target ethers-v6 --out-dir ./src/__generated__ '../cow-abi/src/abis/*.json'"
+  },
+  "dependencies": {
+    "@cowprotocol/contracts": "^1.7.0"
+  },
+  "peerDependencies": {
+    "ethers": "^6.13.5"
+  },
+  "devDependencies": {
+    "ethers": "^6.13.5",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@vercel/style-guide": "^5.2.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-turbo": "^2.0.0",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "typechain": "^8.2.0",
+    "typescript": "5.1.6"
+  }
+}

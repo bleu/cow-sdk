@@ -1,0 +1,25 @@
+{
+  "extends": "../../pkg/config-typescript/base.json",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "paths": {
+      "@cowprotocol/common": ["../cow-common/src"],
+      "@cowprotocol/common/*": ["../cow-common/src/*"],
+      "@cowprotocol/composable": ["../cow-composable/src"],
+      "@cowprotocol/composable/*": ["../cow-composable/src/*"],
+      "@cowprotocol/sdk-ethers-v5": ["../cow-sdk-ethers-v5/src"],
+      "@cowprotocol/sdk-ethers-v5/*": ["../cow-sdk-ethers-v5/src/*"],
+      "@cowprotocol/sdk-ethers-v5/__generated__": ["../cow-sdk-ethers-v5/src/__generated__"],
+      "@cowprotocol/sdk-ethers-v5/__generated__/*": ["../cow-sdk-ethers-v5/src/__generated__/*"],
+      "@cowprotocol/order-signing": ["../cow-order-signing/src"],
+      "@cowprotocol/order-signing/*": ["../cow-order-signing/src/*"]
+    }
+  },
+  "references": [{ "path": "../cow-common" }]
+}

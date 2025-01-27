@@ -1,0 +1,32 @@
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# production
+build
+dist
+
+# generated files
+**/generated/**
+**/*.graphql.ts
+**/schemas/**
+**/graphql.ts
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore empty packages without source files yet
+pkg/sdk-ethers-v5/*
+pkg/sdk-ethers-v6/*
+pkg/sdk-viem/*
+pkg/sdk-wagmi/*

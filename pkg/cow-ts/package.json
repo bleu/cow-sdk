@@ -1,0 +1,30 @@
+{
+  "name": "@cowprotocol/cow-ts",
+  "version": "0.0.0",
+  "private": true,
+  "main": "tist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json --outDir dist/",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@cowprotocol/common": "workspace:^",
+    "@cowprotocol/contracts": "^1.6.0",
+    "@cowprotocol/order-signing": "workspace:^",
+    "@ethersproject/bytes": "^5.7.0",
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/abstract-signer": "^5.7.0",
+    "ethers": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.6.4",
+    "jest-environment-jsdom": "^29.7.0",
+    "typescript": "5.1.6"
+  }
+}
