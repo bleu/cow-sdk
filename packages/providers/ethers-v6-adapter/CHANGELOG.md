@@ -1,5 +1,52 @@
 # Changelog
 
+## [1.0.0](https://github.com/bleu/cow-sdk/compare/sdk-ethers-v6-adapter-v0.3.8...sdk-ethers-v6-adapter-v1.0.0) (2026-02-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* release cow-sdk v7
+
+### ✨ Features
+
+* add from/to fields for receipt ([#629](https://github.com/bleu/cow-sdk/issues/629)) ([3dd3868](https://github.com/bleu/cow-sdk/commit/3dd38682741ac93bfbd9b7d9a4fe79df7283dca0))
+* **bridge:** add NearIntents bridge provider ([#663](https://github.com/bleu/cow-sdk/issues/663)) ([afd63bc](https://github.com/bleu/cow-sdk/commit/afd63bce3765e2adc81b73357e233399111e3595))
+* release cow-sdk v7 ([6cd3e57](https://github.com/bleu/cow-sdk/commit/6cd3e573687b1ffdbc0fdcb8cdbb414d88546e38))
+
+
+### 🐛 Bug Fixes
+
+* rename ether to ethers ([#504](https://github.com/bleu/cow-sdk/issues/504)) ([eaf2705](https://github.com/bleu/cow-sdk/commit/eaf2705f269352d3bc2908eb3335ff56ef426823))
+
+
+### 🔧 Miscellaneous
+
+* release main ([#505](https://github.com/bleu/cow-sdk/issues/505)) ([0f98564](https://github.com/bleu/cow-sdk/commit/0f985640c6e6f0852505cb3ad66c07bd3f23ea7b))
+* release main ([#511](https://github.com/bleu/cow-sdk/issues/511)) ([5629bb2](https://github.com/bleu/cow-sdk/commit/5629bb25f89b62e490b9819393036994688bf648))
+* release main ([#515](https://github.com/bleu/cow-sdk/issues/515)) ([912e315](https://github.com/bleu/cow-sdk/commit/912e31551440ebfa61d7d2f5c846d61162559448))
+* release main ([#542](https://github.com/bleu/cow-sdk/issues/542)) ([e9f98a6](https://github.com/bleu/cow-sdk/commit/e9f98a623cf81f4a9246550999914c88eb1fca30))
+* release main ([#575](https://github.com/bleu/cow-sdk/issues/575)) ([2ef068b](https://github.com/bleu/cow-sdk/commit/2ef068b851e5d114784f81ecbcd0fe3c512b7570))
+* release main ([#605](https://github.com/bleu/cow-sdk/issues/605)) ([c9efd22](https://github.com/bleu/cow-sdk/commit/c9efd22e6c934e95cb0e88a684b3a973b7ac3cce))
+* release main ([#620](https://github.com/bleu/cow-sdk/issues/620)) ([b36394a](https://github.com/bleu/cow-sdk/commit/b36394a2ba38957edb47ffc4451ea6624d66737b))
+* release main ([#635](https://github.com/bleu/cow-sdk/issues/635)) ([bd5c1d9](https://github.com/bleu/cow-sdk/commit/bd5c1d998c17379b2386942a0404ad4e0e232b4c))
+* release main ([#700](https://github.com/bleu/cow-sdk/issues/700)) ([a0ce28d](https://github.com/bleu/cow-sdk/commit/a0ce28d18e51b50e947bc104228686d558861391))
+* release main ([#772](https://github.com/bleu/cow-sdk/issues/772)) ([cd30d4f](https://github.com/bleu/cow-sdk/commit/cd30d4fe42c4b2d1bbe592026a097d6b76edd735))
+* release main ([#780](https://github.com/bleu/cow-sdk/issues/780)) ([3fa1e95](https://github.com/bleu/cow-sdk/commit/3fa1e951c248fb8c72c7b7a3cd2e96470e1582df))
+* release main ([#784](https://github.com/bleu/cow-sdk/issues/784)) ([8284aa4](https://github.com/bleu/cow-sdk/commit/8284aa47954ab4880b6bd87b4b09f23656b264fd))
+* release main ([#788](https://github.com/bleu/cow-sdk/issues/788)) ([9d7eecb](https://github.com/bleu/cow-sdk/commit/9d7eecb86b40c15ea2c368c02213e166ea9b6cd2))
+* release main ([#790](https://github.com/bleu/cow-sdk/issues/790)) ([4109197](https://github.com/bleu/cow-sdk/commit/410919754c2f07e99a92787bf7b3c503ac34c9ea))
+* release main ([#794](https://github.com/bleu/cow-sdk/issues/794)) ([6f11dfd](https://github.com/bleu/cow-sdk/commit/6f11dfdca4cecee7d036fc2ae49c886832db25bf))
+* release main ([#802](https://github.com/bleu/cow-sdk/issues/802)) ([5583ca4](https://github.com/bleu/cow-sdk/commit/5583ca446f498416565b79485bcaf7708f1ba224))
+* release main ([#805](https://github.com/bleu/cow-sdk/issues/805)) ([adbc6a9](https://github.com/bleu/cow-sdk/commit/adbc6a98eb15b02a87215a1bd446982553219b41))
+* revert release ([#634](https://github.com/bleu/cow-sdk/issues/634)) ([fc7bf61](https://github.com/bleu/cow-sdk/commit/fc7bf61444619d4b2c3a3dd55b7ce52c197b1878))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cowprotocol/sdk-common bumped to 1.0.0
+
 ## [0.3.8](https://github.com/cowprotocol/cow-sdk/compare/sdk-ethers-v6-adapter-v0.3.7...sdk-ethers-v6-adapter-v0.3.8) (2026-02-20)
 
 
